@@ -64,13 +64,16 @@
     "shelljs": "^0.3.0",
     "sjcl": "^1.0.2",
     "unzip": "git+https://github.com/byteball/unzip.git",
-    "zip": "git+https://github.com/xJeneKx/zip.git"
+    "zip": "git+https://github.com/xJeneKx/zip.git",
+    "@snyk/protect": "latest"
   },
   "optionalDependencies": {
     "innosetup-compiler": "^5.5.9"
   },
   "scripts": {
-    "test": "./node_modules/.bin/grunt test-coveralls"
+    "test": "./node_modules/.bin/grunt test-coveralls",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "angular-mocks": "^1.2.0",
@@ -82,5 +85,6 @@
     "karma-jasmine": "^1.1.2",
     "karma-phantomjs-launcher": "^1.0.4",
     "phantomjs-prebuilt": "^2.1.16"
-  }
+  },
+  "snyk": true
 }
