@@ -61,7 +61,7 @@
     "lodash": "^4.6.1",
     "moment": "^2.18.1",
     "preconditions": "^1.0.8",
-    "shelljs": "^0.3.0",
+    "shelljs": "^0.9.1",
     "sjcl": "^1.0.2",
     "unzip": "git+https://github.com/byteball/unzip.git",
     "zip": "git+https://github.com/xJeneKx/zip.git"
